@@ -1,0 +1,20 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: auth-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:password@localhost:8761/eureka
+  instance:
+    hostname: localhost
+api.prefix: /api/v1
+
+jwt:
+  secret: MiAVzqUXy5Tfr1kVIGpPMiAVzqUXy5Tfr1kVIGpP
+  expiration: 86400
+management:
+  tracing:
+    sampling:
+      probability: 1.0
